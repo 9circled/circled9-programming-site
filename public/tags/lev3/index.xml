@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lev3 on circled_9.cp</title>
+    <link>http://localhost:1313/tags/lev3/</link>
+    <description>Recent content in Lev3 on circled_9.cp</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="http://localhost:1313/tags/lev3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Union-Find</title>
+      <link>http://localhost:1313/data-structure/union-find/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/data-structure/union-find/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,8 @@
+<aside class="sidebar-nav">
+	<h3>Content</h3>
+	<ul>
+		{{ range .Site.Sections }}
+			{{ partial "menu.html" (dict "section" . ) }}
+		{{ end }}
+	</ul>
+</aside>

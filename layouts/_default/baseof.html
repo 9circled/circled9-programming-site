@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>
+			{{ if eq .Kind "term"}}
+				{{ .Data.Term }} | {{ .Site.Title }}
+			{{ else }}
+				{{ .Title }} | {{ .Site.Title}}
+			{{ end }}	
+		</title>
+		<link rel="icon" href="{{ "/favicon.png" | relURL }}" type="image/png">
+		<link rel="stylesheet" href="/css/style.css">
+	</head>
+	<body>
+		
+		{{ partial "header.html" . }}
+
+		<div class="main-wrapper">
+
+			{{ partial "sidebar.html" . }}
+
+			<main class="main-content">
+				{{ block "main" .}}{{ end }}
+			</main>
+		</div>
+
+		{{ partial "footer.html" . }}
+
+		{{ partial "katex.html" . }}
+
+		<script src="{{ "/js/sidebar.js" | relURL }}" defer></script>
+	</body>
+</html>

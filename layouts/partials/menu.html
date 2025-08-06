@@ -1,0 +1,18 @@
+{{ $section := .section }}
+
+{{ if .section.Sections }}
+	<li class="has-children">
+		<details id="sidebar-{{ replace .section.Path "/" "-" }}">
+			<summary>{{ .section.Title }}</summary>
+		<ul>
+			{{ range $section.Sections }}
+				{{ partial "menu.html" (dict "section" . ) }}
+			{{ end }}
+		</ul>
+		</details>
+	</li>
+{{ else }}
+	<li>
+		<a href="{{ .section.Permalink }}">{{ .section.Title}}</a>
+	</li>
+{{ end }}

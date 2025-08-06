@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>アルゴリズム on circled_9.cp</title>
+    <link>http://localhost:1313/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/</link>
+    <description>Recent content in アルゴリズム on circled_9.cp</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="http://localhost:1313/categories/%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>アルゴリズム</title>
+      <link>http://localhost:1313/algorithm/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/algorithm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>動的計画法</title>
+      <link>http://localhost:1313/algorithm/dp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/algorithm/dp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>桁DP</title>
+      <link>http://localhost:1313/algorithm/dp/digit-dp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/algorithm/dp/digit-dp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

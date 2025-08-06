@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>動的計画法 on circled_9.cp</title>
+    <link>http://localhost:1313/tags/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95/</link>
+    <description>Recent content in 動的計画法 on circled_9.cp</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <atom:link href="http://localhost:1313/tags/%E5%8B%95%E7%9A%84%E8%A8%88%E7%94%BB%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>桁DP</title>
+      <link>http://localhost:1313/algorithm/dp/digit-dp/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/algorithm/dp/digit-dp/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

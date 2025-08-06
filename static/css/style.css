@@ -1,0 +1,276 @@
+:root {
+	--prime: #00aecc;
+	--second: #60c0bd;
+	--third: #bae2f8;
+
+	--text: #333333;
+	--text-light: #ffffff;
+	--text-dark: #000000;
+
+	--light-gray: #eeeeee;
+	--border-color: #cccccc;
+}
+
+/* 	==============================
+	基本スタイル
+	============================== */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1, h2, h3 {
+  color: var(--second);
+}
+
+a {
+  color: var(--prime);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--second);
+  text-decoration: none;
+}
+
+article {
+  background-color: var(--third);
+  border: 2px solid var(--second);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 2em;
+}
+
+th {
+	border: 1px solid var(--border-color);
+	padding: 0.75em;
+	text-align: left;
+	background-color: var(--light-gray);
+	font-weight: bold;
+}
+
+td {
+	border: 1px solid var(--border-color);
+	padding: 0.75em;
+	text-align: left;
+}
+
+
+/* 	==============================
+	各パーツ
+	============================== */
+
+/* === title === */
+.page-title {
+	background-color: var(--light-gray);
+	padding: 0.5em 1em;
+	margin-bottom: 0.5em;
+	border-left: 5px solid var(--prime);
+}
+
+/* === header === */
+.site-header {
+	padding: 1rem 2rem;
+	margin-bottom: 1em;
+	background-color: var(--prime);
+	border-bottom: 5px solid var(--third);
+	color: var(--text-light);
+}
+
+.site-title-header a {
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: var(--text-light);
+}
+
+.site-title-header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+/* === body === */
+.main-wrapper {
+	display: flex;
+	gap: 3em;
+	margin: 1rem 1rem;
+	flex: 1;
+}
+
+/* === sidebar === */
+.sidebar-nav {
+	padding: 1rem;
+	width: 240px;
+	border-right: 1px solid var(--border-color);
+}
+
+.sidebar-nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-nav ul ul {
+	padding-left: 1rem;
+}
+
+
+.sidebar-nav a {
+	display: block;
+	padding: 8px 12px;
+	color: var(--text);
+	border-radius: 4px;
+}
+
+.sidebar-nav a:hover{
+	background-color: var(--light-gray);
+	color: var(--second);
+}
+
+
+.sidebar-nav .has-children details summary {
+	display: block;
+	padding: 8px 12px;
+	color: var(--text);
+	border-radius: 4px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.sidebar-nav .has-children details summary:hover{
+	background-color: var(--light-gray);
+	color: var(--prime);
+}
+
+.sidebar-nav a::before{
+	content: "- ";
+}
+
+.sidebar-nav .has-children > details summary::before{
+	content: "> ";
+}
+
+
+/* === main === */
+.main-content {
+	flex: 1;
+}
+
+
+/* === tags === */
+.tag-link {
+	background-color: var(--third);
+	color: var(--text);
+	padding: 2px 8px;
+	border-radius: 4px;
+	font-size: 0.8em;
+}
+
+.tag-link:hover {
+	filter: brightness(90%);
+}
+
+.tag-link[href*="lev1"] {
+	background-color: rgb(128, 128, 128);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev1+"] {
+	background-color: rgb(128, 128, 128);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev2"] {
+	background-color: rgb(128, 64, 0);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev3"] {
+	background-color: rgb(0, 128, 0);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev4"] {
+	background-color: rgb(0, 192, 192);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev5"] {
+	background-color: rgb(0, 0, 255);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev6"] {
+	background-color: rgb(192, 192, 0);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev7"] {
+	background-color: rgb(255, 128, 0);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev8"] {
+	background-color: rgb(255, 0, 0);
+	color: var(--text-light);
+}
+
+.tag-link[href*="lev8+"] {
+	background-color: rgb(255, 0, 0);
+	color: var(--text-light);
+}
+
+.tags-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+
+/* === tag search === */
+.tag-title {
+	padding: 0 1em 1em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.article-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.article-list-item a {
+	display: block;
+	color: var(--text);
+	border: 1px solid var(--border-color);
+	border-left: 10px solid var(--prime);
+	padding: 1em 2em;
+	margin: 2em 1em;
+}
+
+.article-list-item a:hover {
+	background-color: var(--light-gray);
+	color: var(--second);
+}
+
+/* === footer === */
+.site-footer {
+	border-top: 1px solid var(--border-color);
+	margin: 2em 2em 0;
+	padding: 1em 0;
+	font-size: 0.9rem;
+	color: var(--text);
+	text-align: center;
+}

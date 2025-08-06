@@ -1,0 +1,21 @@
+{{ define "main" }}
+	<header>
+		<h1 class="tag-title">Tag: {{ .Data.Term }}</h1>
+	</header>
+
+	<main>
+		{{ if .Content }}
+			<div class="taxonomy-description">
+				{{ .Content }}
+			</div>
+		{{ end }}
+		
+		<ul class="article-list">
+			{{ range .Pages }}
+			<li class="article-list-item">
+				<a href="{{ .Permalink }}">{{ .Title }}</a>
+			</li>
+			{{ end }}
+		</ul>
+	</main>
+{{ end }}
